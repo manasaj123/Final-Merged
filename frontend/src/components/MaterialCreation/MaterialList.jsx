@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
@@ -23,6 +24,7 @@ import {
   Calendar,
   User
 } from 'lucide-react';
+
 
 const MaterialList = ({ onCreateNew, onEdit }) => {
   const { toast } = useToast();
@@ -134,7 +136,7 @@ const MaterialList = ({ onCreateNew, onEdit }) => {
 
   if (isLoading) {
     return (
-      <div className="w-full max-w-7xl mx-auto p-6">
+      <div className=" w-full max-w-7xl mx-auto p-6">
         <Card>
           <CardContent className="flex items-center justify-center p-8">
             <div className="text-center">
